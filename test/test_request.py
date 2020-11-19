@@ -62,7 +62,7 @@ class TestJobRequest:
         assert len(messages) == 10
         assert messages[0] == "message 1"
 
-    def test_add_argument_chaining(self):
+    def test_method_chaining(self):
         request = JobRequest(service="test")
         request.add_input(value="s3://bucket/test.txt").add_output(
             value="s3://bucket/test.txt"
